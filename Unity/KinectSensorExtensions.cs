@@ -1,5 +1,4 @@
-﻿using Microsoft.Kinect.VisualGestureBuilder;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using UniRx;
@@ -318,21 +317,6 @@ namespace Kinect.ReactiveV2
 
             return Observable.FromEventPattern<EventHandler<MultiSourceFrameArrivedEventArgs>, MultiSourceFrameArrivedEventArgs>(
                 h => h.Invoke, h => reader.MultiSourceFrameArrived += h, h => reader.MultiSourceFrameArrived -= h)
-                .Select(e => e.EventArgs);
-        }
-
-        /// <summary>
-        /// Converts the MultiSourceFrameArrived event to an observable sequence.
-        /// </summary>
-        /// <param name="kinectSensor">The kinect sensor.</param>
-        /// <param name="kinectSensor">The reader to be used to subscribe to the MultiSourceFrameArrived event.</param>
-        /// <returns>The observable sequence.</returns>
-        public static IObservable<VisualGestureBuilderFrameArrivedEventArgs> VisualGestureBuilderFrameArrivedObservable(this KinectSensor kinectSensor, VisualGestureBuilderFrameReader reader)
-        {
-            if (kinectSensor == null) throw new ArgumentNullException("kinectSensor");
-
-            return Observable.FromEventPattern<EventHandler<VisualGestureBuilderFrameArrivedEventArgs>, VisualGestureBuilderFrameArrivedEventArgs>(
-                h => h.Invoke, h => reader.FrameArrived += h, h => reader.FrameArrived -= h)
                 .Select(e => e.EventArgs);
         }
 
