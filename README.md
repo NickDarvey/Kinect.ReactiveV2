@@ -10,6 +10,15 @@ This project contains extension methods to ease the use of the <a href="http://w
 
 <code>PM> Install-Package Kinect.ReactiveV2.Input</code>
 
+##Unity Installation
+###Dependencies
+* Kinect for Windows Unity 2.0.1410 ([Unity package](http://go.microsoft.com/fwlink/?LinkID=513177))
+* UniRx 5.3.0 ([Unity Asset Store](https://www.assetstore.unity3d.com/en/#!/content/17276))
+
+###Adding to your Unity project
+Drag and drop the *.cs files from the Unity folder into your Plugins folder.
+
+
 ##Samples
 
 ###Kinect.ReactiveV2
