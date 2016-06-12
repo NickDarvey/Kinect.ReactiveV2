@@ -7,7 +7,7 @@ using Windows.Kinect;
 
 namespace Kinect.ReactiveV2
 {
-    public static class KinectSensorExtensions
+    public static class GesturesKinectSensorExtensions
     {
 
         /// <summary>
