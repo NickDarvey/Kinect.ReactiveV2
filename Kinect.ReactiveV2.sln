@@ -56,6 +56,12 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Gestures.Unity", "Gestures.
 		Gestures.Unity\VisualGestureBuilderObservableExtensions.cs = Gestures.Unity\VisualGestureBuilderObservableExtensions.cs
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Face.Unity", "Face.Unity", "{F74DE041-3EA9-452D-BDA7-6C6E97104F4F}"
+	ProjectSection(SolutionItems) = preProject
+		Face.Unity\FaceFrameObservableExtensions.cs = Face.Unity\FaceFrameObservableExtensions.cs
+		Face.Unity\FaceFrameReaderExtensions.cs = Face.Unity\FaceFrameReaderExtensions.cs
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
